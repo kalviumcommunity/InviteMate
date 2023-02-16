@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(213, 211, 211); */
+    color: rgb(0, 68, 171);
+}
+
+.container{
+    background-size:auto;
+    height: 70vmin;
+    width: 80vmin;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5em;
+    box-shadow: 0px 0px 1.4em rgb(3, 0, 139);
+    border: 0;
+}
+
+#headInvite{
+    font-family: 'Inter', sans-serif;
+    height: 2.4em;
+    width: 17em;
+    min-width: 5.5em;
+    max-width: 18em;
+    min-height: 1.7em;
+    max-height: 2.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-300%);
+    padding: 0.08em 0.05em 0.1em 0.05em;
+    font-size: 2.2vmin;
+    font-weight: 400;
+    overflow-y: hidden;
+    background-color:rgba(255, 231, 49, 0);
+    color: rgba(255, 204, 21, 0.942);
+    border-radius: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0;    
+}
+
+#nameOneInvite{
+    font-family: 'Allura', cursive;
+    position: absolute;
+    height: 0.3em;
+    width: 3em;
+    min-height: 0.8em;
+    max-height: 1.9em;
+    min-width: 3.5em;
+    max-width: 4.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%,-45%);
+    font-size: 5.5vmin;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 204, 21);
+    overflow: hidden;
+    border: 0;
+    z-index: 1;
+    line-height: 100%;
+    padding: 0.2em;
+    text-align: center;
+    resize: both;
+}
+
+#nameTwoInvite{
+    font-family: 'Allura', cursive;
+    position: absolute;
+    height: 3vmin;
+    width: 3em;
+    min-height: 0.8em;
+    max-height: 1.9em;
+    min-width: 3.5em;
+    max-width: 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%,-50%);
+    font-size:5.5vmin;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 204, 21);
+    overflow: hidden;
+    border: 0;
+    z-index: 1;
+    line-height: 100%;
+    padding: 0.2em;
+    text-align: left;
+}
+
+#footInvite{
+    font-family: 'Inter', sans-serif;
+    height: 2.5em;
+    width: 17em;
+    min-width: 5.5em;
+    max-width: 18em;
+    min-height: 1.7em;
+    max-height: 4.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,200%);
+    /* padding: 0.08em 0.05em 0.1em 0.05em; */
+    font-size: 2.5vmin;
+    font-weight: 500;
+    text-shadow: 0 0 1px black;
+    overflow-y: hidden;
+    background-color:rgba(240, 248, 255, 0);
+    color: rgba(255, 204, 21, 0.918);
+    /* border-radius: 0.1em; */
+    text-align: center;
+    border: 0; 
+}
+
+.nameHolder{
+    max-width: 33vmin;
+}
+
+
+
+
+
+

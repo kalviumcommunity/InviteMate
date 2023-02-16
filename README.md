@@ -2,4 +2,6 @@
 
 This is an E-Invitation Maker Website.
 
-This is an update I made using terminal on my Repo.
+Update on PR's
+
+1st) NodeJs - working with package.json

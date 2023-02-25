@@ -11,7 +11,7 @@
 .topNavBar {
   height: 12vmin;
   max-height: 15vh;
-  width: fill-content;
+  width:100vw;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
@@ -44,7 +44,7 @@
 
 .bottomNavBar {
   height: 11vmin;
-  width: fill-content;
+  /* width: 100vw; */
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   display: flex;
@@ -62,7 +62,7 @@
 
 .greetingsContainer {
   height: 28vmin;
-  width: auto;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +110,13 @@
   border-right: 0.1em solid rgb(0, 0, 0);
   border-top: 0.1em solid rgb(0, 0, 0);
   border-bottom:  0.1em solid rgb(0, 0, 0);
+  cursor: pointer;
+}
 
+.templatesContainer{
+  height: 30vh;
+  width: 95%;
+  background-color: rgb(174, 174, 174);
 }
 
 /* #dropDown {

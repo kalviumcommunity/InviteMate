@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Wtemp1.css"
-import image from "../../Templates/Wedding6.png"
+import image from "../../../Templates/Wedding6.png"
 
 function Wtemp1() {
   return (

@@ -159,6 +159,7 @@ function EditingPage() {
   // console.log(temp)
 
   const handleDownload = () => {
+    
     html2canvas(templateRef.current,{logging:true,scrollY: -window.scrollY}).then((canvas) => {
       canvas.toBlob((blob) => {
         saveAs(blob, 'template.png')

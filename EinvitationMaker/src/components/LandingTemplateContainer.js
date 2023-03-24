@@ -19,6 +19,8 @@ function TemplateContainer() {
   const handleClick = (data) => {
     navigate('/editing', {state: {id: data.id, temp: data.template}})
   }
+
+  
  
   return headingData.map((data, index) => {
     return (

@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require('cors')
+
 const downloadRoutes = require("./routes/downloads");
 
 //express app
@@ -9,6 +11,7 @@ const app = express();
 
 //middleware
 app.use(express.json());
+app.use(cors())
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
@@ -17,9 +20,9 @@ app.use((req, res, next) => {
 
 //routes
 app.use("/editing", downloadRoutes);
-// app.get('/',(req,res) => {
-//     res.json({msg:'Welcome to the port 4000 now'})
-// })
+app.get('/',(req,res) => {
+    res.json({msg:'Welcome to the port 4000 now'})
+})
 
 //connect to DB
 mongoose

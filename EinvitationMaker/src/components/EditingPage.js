@@ -1,21 +1,22 @@
 import React, { useEffect, useState, useRef } from "react";
-import {  useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import headingData from "./CategoriesData";
 import "./Combined.css";
 import Navbar from "./Navbar";
 import Btemp1 from "./categories/Btemp1/Btemp1";
 import Wtemp1 from "./categories/wedding/Wtemp1/Wtemp1";
 import WedAnniv1 from "./categories/WedAnniv1/WedAnniv";
-import html2canvas from 'html2canvas'; 
-import {saveAs} from 'file-saver';
+import html2canvas from "html2canvas";
+import { saveAs } from "file-saver";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // import btemp1 from "./Templates/btemp1SS.png";
 // import wtemp1 from "./Templates/Wed1SS.png";
 // import wedAnniv1 from "./Templates/wedAnnivSS.png";
 import Back from "./Back";
+import Loader from "./Loader";
 
 function EditingPage() {
-
   const templates = [
     { id: 11, temp: <Btemp1 /> },
     { id: 12, temp: <WedAnniv1 /> },
@@ -145,38 +146,77 @@ function EditingPage() {
   ];
 
   const [idNum, setIdNum] = useState([]);
+  const [load, setLoad] = useState(true);
+
+  const {
+    loginWithRedirect,
+    isAuthenticated,
+    logout,
+    user,
+    getAccessTokenSilently,
+  } = useAuth0();
 
   const state = useLocation();
 
-  const templateRef = useRef()
+  const templateRef = useRef();
 
   useEffect(() => {
     setIdNum(state.state.id);
   }, [state.state.id]);
 
   const temp = templates.find((each) => each.id === idNum);
-  const finalTemp = temp?.temp
-  // console.log(temp)
+  const finalTemp = temp?.temp;
+  // console.log(user.name, idNum, finalTemp?.type.name);
 
   const handleDownload = () => {
-    
-    html2canvas(templateRef.current,{logging:true,scrollY: -window.scrollY}).then((canvas) => {
+    html2canvas(templateRef.current, {
+      logging: true,
+      scrollY: -window.scrollY,
+    }).then((canvas) => {
       canvas.toBlob((blob) => {
-        saveAs(blob, 'template.png')
+        saveAs(blob, "template.png");
+      });
+    });
+
+    if (isAuthenticated) {
+      fetch("http://localhost:4000/editing", {
+        method: "POST",
+        body: JSON.stringify({
+          username: user.name,
+          templateID: idNum,
+          template: finalTemp?.type.name,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
       })
-    })
-  }
+        .then((data) => data.json())
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log(err));
+    }
+  };
+
+  setTimeout(() => {
+    setLoad(false);
+  }, 1200);
 
   return (
-    <div className="editingNavBar">
-      <Navbar handleDownload={handleDownload} />
-      <Back />
-      {/* {temp?.temp} */}
-      <div ref={templateRef} id='#editPageContainer'>
-      {finalTemp}
-      </div>
-
-    </div>
+    <>
+      {load ? (
+        <Loader />
+      ) : (
+        <div className="editingNavBar">
+          <Navbar handleDownload={handleDownload} />
+          <Back />
+          {/* {temp?.temp} */}
+          <div ref={templateRef} id="#editPageContainer">
+            {finalTemp}
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

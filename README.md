@@ -49,6 +49,12 @@ Update on PR's
 
 19. Loader
 
+Help in implementing parts of the code  -
+Loader, backend source recommendation, mapping logic - Piyush Negi
+Design - Aditya Anand
+Auth0 - Anmol Singh
+
+
 
 
 

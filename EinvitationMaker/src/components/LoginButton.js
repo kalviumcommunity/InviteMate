@@ -7,7 +7,7 @@ function LoginButton() {
   const [logOut, setLogOut] = useState(false);
 
 
-  const { loginWithRedirect, isAuthenticated, logout, user,getAccessTokenSilently } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   const openModel = () => {
     logout({ logoutParams: { returnTo: window.location.origin } });

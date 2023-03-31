@@ -1,7 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import back from './Templates/arrow-left.svg'
 import './Combined.css'
-import { useNavigate } from 'react-router-dom'
+import  {useNavigate}  from 'react-router-dom'
 
 function Back() {
 

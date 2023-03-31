@@ -13,7 +13,41 @@ Update on PR's
 
 1. NodeJs - working with package.json
 
-2. Nodemon installed.
+2. Nodemon installed
+
+3. NPM dependency
+
+4. IDE Setup
+
+5. ReactJS app initialization
+
+6. Application components created
+
+7. Using the public folder to serve files
+
+8. MongoDB - Installations and Basics
+
+9. High-fid design for your application
+
+10. Low-fid design for your application
+
+11. Application deployed
+
+12. Authentication
+
+13. Mongoose 
+
+14. CRUD Operations
+
+15. Simple API - CRUD Operations using NodeJs
+
+16. Schemas and Models
+
+17. Deployment
+
+18. Middlewares
+
+19. Loader
 
 
 

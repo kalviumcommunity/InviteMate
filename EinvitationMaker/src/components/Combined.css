@@ -188,7 +188,7 @@ background-color: #000000;
 }
 
 .templatesContainer{
-  /* height: calc(29vh+5em); */
+  /* height: 16em; */
   /* max-height: calc(29vh+3em); */
   width: 95%;
   /* margin: 15%; */
@@ -235,7 +235,7 @@ background-color: #000000;
 }
 
 .bottomTemplatesContainer{
-  /* height: 28vh; */
+  /* height: 13em; */
   /* min-height: 10em;
   max-height: 16em;
   width: 100%;
@@ -447,8 +447,7 @@ background-color: #000000;
   /* background-color: #e100ff; */
 }
 
-.formContainer {
-  /* background: radial-gradient(circle at top left, #003355, #4d99bf); */
+/* .formContainer {
   border: 1em solid black;
   border-style: double;
   display: flex;
@@ -456,14 +455,11 @@ background-color: #000000;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* width: 5em; */
   background: radial-gradient(circle at bottom right, #3300ff, #ffffff);
-  /* overflow-block: hidden; */
  
-}
+} */
 
-.form {
-  /* background: radial-gradient(circle at bottom, #002d75, #ffffff); */
+/* .form {
   height: min-content;
   position: absolute;
   width: 55%;
@@ -478,23 +474,22 @@ background-color: #000000;
   margin: 1em;
   box-shadow: 5px 5px 30px black;
   background-color: #ffffff;
-}
+} */
 
-.divider{
+/* .divider{
   border: 0.08em solid rgb(128, 124, 124);
   width: 40vmin;
   margin-top: 1em;
   margin-bottom: 0.7em;
-}
+} */
 
 
 
 
-.enterButtons{
+/* .enterButtons{
   font-size: 5vmin;
   height: 10vmin;
   width: 40vmin;
-  /* border: 0.15em solid black; */
 }
 
 
@@ -503,22 +498,20 @@ background-color: #000000;
   width: 20vmin;
   background-color: rgb(126, 242, 255);
   font-size: 2.8vmin;
-  /* right: 20%; */
   font-weight: 600;
   border-radius: 0.2em;
   cursor: pointer;
   margin-top: 1em;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-}
+} */
 
 
-#registerButton{
+/* #registerButton{
   height: 7vmin;
   width: 20vmin;
   background-color: rgb(126, 242, 255);
   font-size: 2.8vmin;
-  /* right: 20%; */
   font-weight: 600;
   border-radius: 0.3em;
   cursor: pointer;
@@ -535,9 +528,9 @@ background-color: #000000;
 .login #registerButton{
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-}
+} */
 
-.input {
+/* .input {
   height: 5vmin;
   width: 38vmin;
   background-color: rgb(225, 225, 225);
@@ -556,7 +549,7 @@ background-color: #000000;
 #createAcc {
   font-size: 4.2vmin;
   margin-bottom: 0.2em;
-}
+} */
 
 /* .buttons {
   height: 6vmin;
@@ -572,7 +565,7 @@ background-color: #000000;
   background-color: black;
 } */
 
-.buttons:hover {
+/* .buttons:hover {
   transform: scale(1.1);
   transition: 200ms ease-in-out;
   color: rgb(0, 0, 0);
@@ -584,8 +577,8 @@ background-color: #000000;
 .error {
   color: red;
   font-size: 1.8vmin;
-}
-
+} */
+/* 
 #submit {
   height: 6vmin;
   width: 40vmin;
@@ -598,14 +591,13 @@ background-color: #000000;
   margin-top: 1em;
   color: orangered;
   background-color: black;
-}
-
+} */
+/* 
 #orId{
   margin: 0.4em;
-  /* background-color: ; */
-}
+} */
 
-#googleButton{
+/* #googleButton{
   height: 6vmin;
   width: 40vmin;
   background-color: rgb(126, 242, 255);
@@ -614,12 +606,11 @@ background-color: #000000;
   font-weight: 600;
   border-radius: 0.3em;
   cursor: pointer;
-  /* margin-top: 1em; */
   color: orangered;
   background-color: black;
-}
+} */
 
-#logInText{
+/* #logInText{
   text-decoration:underline;
 }
 
@@ -635,7 +626,7 @@ background-color: #000000;
 
 .accountLine{
   margin-top: 0.2em ;
-}
+} */
 
 .loaderContainer{
   height: 100vh;

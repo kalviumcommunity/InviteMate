@@ -6,14 +6,11 @@ import Category from './components/Category';
 import Btemp1 from './components/categories/Btemp1/Btemp1';
 import Wtemp1 from './components/categories/wedding/Wtemp1/Wtemp1';
 // import WedAnniv1 from './components/categories/WedAnniv1/WedAnniv';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 // import Greeting from './components/Greeting';
 // import TemplateContainer from './components/TemplateContainer';
 import EditingPage from './components/EditingPage'
 import Home from './components/Home';
-import PersonalCustomization from './components/categories/PersonalCustomisation';
-import SignUp from './components/SignUp';
-import Login from './components/Login';
 
 
 
@@ -33,9 +30,6 @@ function App() {
           <Route path={`/editing`} element={<EditingPage/>}/>
           <Route path={`/Wtemp1`} element={<Wtemp1/>}/>
           <Route path={`/Btemp1`} element={<Btemp1/>}/>
-          <Route path={`/PersonalCustomization`} element={<PersonalCustomization/>}/>
-          <Route path='/Signup' element={<SignUp/>}></Route>
-          <Route path='/Login' element={<Login/>}></Route>
 
 
           {/* <Route path={`/Wtemp1`} element={<Wtemp1/>}/> */}
@@ -49,11 +43,6 @@ function App() {
           <Route path='/WedAnniv' element={<WedAnniv/>}></Route> */}
 
         </Routes>
-        {/* <Navbar/> */}
-        {/* <Btemp1/> */}
-        {/* <Wtemp1/> */}
-        
-
       </div>
     </>
   );

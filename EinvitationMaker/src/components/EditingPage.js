@@ -149,11 +149,8 @@ function EditingPage() {
   const [load, setLoad] = useState(true);
 
   const {
-    loginWithRedirect,
     isAuthenticated,
-    logout,
     user,
-    getAccessTokenSilently,
   } = useAuth0();
 
   const state = useLocation();

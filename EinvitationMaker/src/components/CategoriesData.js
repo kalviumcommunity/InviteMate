@@ -19,8 +19,8 @@ const headingData = [
         template: btemp1,
         eachTemplates: [
           { temp: btemp1, id: 111  },
-          { temp: wedAnniv1, id: 112 , path: "/categories/WedAnniv1/WedAnniv1" },
-          { temp: wtemp1, id: 113 , path: "/categories/wedding/Wtemp1" },
+          { temp: wedAnniv1, id: 112  },
+          { temp: wtemp1, id: 113 },
         ],
       },
       {
@@ -317,21 +317,3 @@ const headingData = [
 
 export default headingData;
 
-// path : <div>
-// <img src={image} alt='bdaytemp1' class="container"/>
-// <div className="subContainer">
-//     <div className="textContainer">
-//         <h1>Happy<br/>Birthday</h1><br/>
-//         <div className='nameHolder'>
-//           {/* <textarea type={Text} id='name' value={name} onChange={handleChange}></textarea> */}
-//         </div>
-//         {/* <input onChange={(e)=>setName(e.target.value)} onClick></input> */}
-//         <div className='dateHolder'>
-//           <textarea typeof='text' id='date'>28-Aug-2023</textarea>
-//         </div>
-//     </div>
-// </div>
-// <footer>
-//     <textarea id='location'>Party at N.K Restaurant, Lovely Professional University</textarea>
-// </footer>
-// </div>

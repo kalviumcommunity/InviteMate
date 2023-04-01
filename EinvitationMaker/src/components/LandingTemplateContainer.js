@@ -1,8 +1,7 @@
 import React from "react";
 import headingData from "./CategoriesData";
 import rightArrow from "./Templates/arrow-right.svg";
-// import { Link, Navigate } from "react-router-dom";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function TemplateContainer() {
   const navigate = useNavigate();
@@ -19,7 +18,6 @@ function TemplateContainer() {
   const handleClick = (data) => {
     navigate('/editing', {state: {id: data.id, temp: data.template}})
   }
-
   
  
   return headingData.map((data, index) => {

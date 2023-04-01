@@ -3,9 +3,10 @@ import searchIcon from "../components/Templates/search.svg";
 // import dropdown from "../components/Templates/chevron-down.svg";
 
 function Greeting() {
+
   return (
     <div className="greetingsContainer">
-      <h1 id="greetingMessage">
+      <h1 id="greetingMessage" contentEditable>
         Celebrate in style with our e-invites.
         <br />
         The perfect way to spread the word!

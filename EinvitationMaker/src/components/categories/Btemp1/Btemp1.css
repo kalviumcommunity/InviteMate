@@ -120,43 +120,43 @@ footer{
 
 @media screen and (max-width: 1000px) {
     footer{
-        transform: translate(0,355%);
+        transform: translate(0,348%);
     }
 }
 
 @media screen and (max-width: 500px) {
     .textContainer{
-        transform: translate(25%,-20%);
+        transform: translate(25%,-25%);
     }
     footer{
-        transform: translate(0,370%)
+        transform: translate(0,345%)
     }
 }
 @media screen and (max-width: 450px) {
     footer{
-        transform: translate(0,380%)
+        transform: translate(0,355%)
     }
 }
 
 @media screen and (max-width: 400px) {
     footer{
-        transform: translate(0,400%)
+        transform: translate(0,378%)
     }
 }
 
 @media screen and (max-width: 376px) {
     footer{
-        transform: translate(0,410%)
+        transform: translate(0,395%)
     }
 }
 
-@media screen and (max-width: 281px) {
+@media screen and (max-width: 285px) {
     .textContainer{
         transform: translate(25%,-2%);
     }
 
     footer{
-        transform: translate(0,463%)
+        transform: translate(0,425%)
     }
 }
 

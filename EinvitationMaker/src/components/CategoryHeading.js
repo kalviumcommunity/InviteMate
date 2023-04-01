@@ -2,7 +2,7 @@ import './Combined.css'
 import leftArrow from './Templates/arrow-left.svg'
 import { Link, Navigate } from "react-router-dom";
 
-function CategoryHeading({setSelectedButton, single}) {
+function CategoryHeading({setSelectedButton, single, setLoader}) {
 
   // const changeURL = () => {
   //   Navigate(`/:category/:${setSelectedButton}`)
@@ -23,7 +23,7 @@ function CategoryHeading({setSelectedButton, single}) {
       <div className='bottomCategoryBar'>
         <div className='insideBottomCategoryBar'>
         {single?.subHeading?.map((data, index) => {
-          return <h2 id='subTitles' key={index} onClick={() => {setSelectedButton(data.title)} }>
+          return <h2 id='subTitles' key={index} onClick={() => {setSelectedButton(data.title); setLoader(true)} }>
             {data.title}</h2>
           })}
         </div>

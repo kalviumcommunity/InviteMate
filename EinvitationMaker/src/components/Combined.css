@@ -637,6 +637,23 @@ background-color: #000000;
   margin-top: 0.2em ;
 }
 
+.loaderContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insideCategoryTemplatesContainer .loaderContainer{
+  height: 100%;
+  /* color: #e100ff; */
+  /* background: linear-gradient(to right, #e100ff, #00ddffd0); */
+
+  /* border: 1em solid black; */
+}
+
 
 
 

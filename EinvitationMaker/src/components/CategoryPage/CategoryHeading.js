@@ -1,5 +1,5 @@
-import './Combined.css'
-import leftArrow from './Templates/arrow-left.svg'
+import '../Combined.css'
+import leftArrow from '../Templates/arrow-left.svg'
 import { Link } from "react-router-dom";
 
 function CategoryHeading({setSelectedButton, single, setLoader}) {

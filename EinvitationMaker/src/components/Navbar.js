@@ -31,7 +31,7 @@ export default function Navbar({ handleDownload }) {
   return (
     <div className="navBar">
       <div className="topNavBar">
-        <img src={logo} alt="logoImg" id="logo" onClick={() => redirect()} />
+        <img src={logo} alt="logoImg" id="logo" onClick={() => navigate('../')} />
         {window.location.pathname === "/editing" ? (
           <EditPageSave handleDownload={handleDownload} />
         ) : (
@@ -44,10 +44,7 @@ export default function Navbar({ handleDownload }) {
             {category.title}
           </h2>
         ))}
-        {/* <Button>Drop Down</Button>
-        <Menu>headingData</Menu>
-        <MenuItem>hhhhh</MenuItem>
-         */}
+       
       </div>
     </div>
   );

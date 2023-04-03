@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
+import Navbar from '../Navbar'
 import Greeting from './Greeting'
 import LandingTemplateContainer from './LandingTemplateContainer'
-import './Combined.css'
-import Loader from './Loader'
+import '../Combined.css'
+import Loader from '../Loader'
 
 function Home() {
 

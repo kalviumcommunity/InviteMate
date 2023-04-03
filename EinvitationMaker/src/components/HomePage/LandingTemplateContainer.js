@@ -1,6 +1,6 @@
 import React from "react";
-import headingData from "./CategoriesData";
-import rightArrow from "./Templates/arrow-right.svg";
+import headingData from "../CategoriesData";
+import rightArrow from "../Templates/arrow-right.svg";
 import { useNavigate } from "react-router-dom";
 
 function TemplateContainer() {

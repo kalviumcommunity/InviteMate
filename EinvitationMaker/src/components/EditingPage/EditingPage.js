@@ -202,6 +202,7 @@ function EditingPage() {
         .catch((err) => console.log(err));
     }
   };
+  
 
   // const handleDownload = () => {
   //   html2canvas(templateRef.current, {

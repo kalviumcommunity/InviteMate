@@ -35,7 +35,7 @@ function WedAnniv1() {
         </div>
         <div className="WedAnniv1Wbody">
           <h2 id="WedAnniv1nameOneInvite"  onChange={handleChangeNameOne} contentEditable>{nameOne}</h2>
-          <textarea id="WedAnniv1nameTwoInvite" value={nameTwo} onChange={handleChangeNameTwo}></textarea>
+          <h2 id="WedAnniv1nameTwoInvite" value={nameTwo} onChange={handleChangeNameTwo} contentEditable>{nameTwo}</h2>
         </div>
         <div className="Wfoot">
           <textarea id="WedAnniv1footInvite" value={footInvite} onChange={handleChangeFootInvite}>

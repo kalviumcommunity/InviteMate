@@ -7,12 +7,9 @@ function Back() {
 
     const navigate = useNavigate()
 
-    const goToBackPage = () => {
-        navigate('../')
-    }
   return (
     <div>
-      <img src={back} alt='back' id='backImg' onClick={()=>goToBackPage()}></img>
+      <img src={back} alt='back' id='backImg' onClick={()=>navigate('../')}></img>
     </div>
   )
 }

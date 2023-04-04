@@ -1,7 +1,7 @@
 // import { Component } from 'react';
 import {Route, Routes} from 'react-router-dom'
 import './App.css';
-import Category from './components/Category';
+import Category from './components/CategoryPage/Category';
 // import Greeting from './components/Greeting';
 import Btemp1 from './components/categories/Btemp1/Btemp1';
 import Wtemp1 from './components/categories/wedding/Wtemp1/Wtemp1';
@@ -9,8 +9,8 @@ import Wtemp1 from './components/categories/wedding/Wtemp1/Wtemp1';
 // import Navbar from './components/Navbar';
 // import Greeting from './components/Greeting';
 // import TemplateContainer from './components/TemplateContainer';
-import EditingPage from './components/EditingPage'
-import Home from './components/Home';
+import EditingPage from './components/EditingPage/EditingPage'
+import Home from './components/HomePage/Home';
 
 
 

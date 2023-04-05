@@ -9,7 +9,7 @@ import WedAnniv1 from "../categories/WedAnniv1/WedAnniv";
 import html2canvas from "html2canvas";
 import { saveAs } from "file-saver";
 import { useAuth0 } from "@auth0/auth0-react";
-import domtoimage from 'dom-to-image';
+// import domtoimage from 'dom-to-image';
 
 
 // import btemp1 from "./Templates/btemp1SS.png";
@@ -162,57 +162,27 @@ function EditingPage() {
 
   const temp = templates.find((each) => each.id === idNum);
   const finalTemp = temp?.temp;
-  // console.log(user.name, idNum, finalTemp?.type.name);
 
-  const handleDownload = () => {
-    setTimeout(() => {
-      domtoimage
-        .toJpeg(templateRef.current,{
-          scroll: {
-            enable: true,
-            y:-window.scrollY,
-            x: -window.scrollX
-          }
-        })
-        .then((dataUrl) => {
-          const link = document.createElement("a");
-          link.download = `template.jpeg`;
-          link.href = dataUrl.toString();
-          link.click();
-        })
-        .catch((error) => console.log("Error creating image: ", error));
-    }, 10);
-
-    if (isAuthenticated) {
-      fetch("http://localhost:4000/editing", {
-        method: "POST",
-        body: JSON.stringify({
-          username: user.name,
-          templateID: idNum,
-          template: finalTemp?.type.name,
-        }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((data) => data.json())
-        .then((res) => {
-          console.log(res);
-        })
-        .catch((err) => console.log(err));
-    }
-  };
-  
+  // console.log(user.name, idNum, finalTemp?.type?.name);
 
   // const handleDownload = () => {
-  //   html2canvas(templateRef.current, {
-  //     logging: true,
-  //     scrollY: -window.scrollY,
-  //   }).then((canvas) => {
-  //     canvas.toBlob((blob) => {
-  //       saveAs(blob, "template.png");
-  //     });
-  //   });
+  //   setTimeout(() => {
+  //     domtoimage
+  //       .toJpeg(templateRef.current,{
+  //         scroll: {
+  //           enable: true,
+  //           y:-window.scrollY,
+  //           x: -window.scrollX
+  //         }
+  //       })
+  //       .then((dataUrl) => {
+  //         const link = document.createElement("a");
+  //         link.download = `template.jpeg`;
+  //         link.href = dataUrl.toString();
+  //         link.click();
+  //       })
+  //       .catch((error) => console.log("Error creating image: ", error));
+  //   }, 10);
 
   //   if (isAuthenticated) {
   //     fetch("http://localhost:4000/editing", {
@@ -233,6 +203,37 @@ function EditingPage() {
   //       .catch((err) => console.log(err));
   //   }
   // };
+  
+
+  const handleDownload = () => {
+    html2canvas(templateRef.current, {
+      logging: true,
+      scrollY: -window.scrollY,
+    }).then((canvas) => {
+      canvas.toBlob((blob) => {
+        saveAs(blob, "template.png");
+      });
+    });
+
+    if (isAuthenticated) {
+      fetch("http://localhost:4000/editing", {
+        method: "POST",
+        body: JSON.stringify({
+          username: user.name,
+          templateID: idNum,
+          template: finalTemp?.type.name
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((data) => data.json())
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log(err));
+    }
+  };
 
   setTimeout(() => {
     setLoad(false);
@@ -247,7 +248,7 @@ function EditingPage() {
           <Navbar handleDownload={handleDownload} />
           <Back />
           {/* {temp?.temp} */}
-          <div id="#editPageContainer" style={{display:"grid"}}>
+          <div id="#editPageContainer" style={{display:"flex",justifyContent:"center" }}>
             <div ref={templateRef} style={{
               width:"fit-content",
               height:"fit-content",

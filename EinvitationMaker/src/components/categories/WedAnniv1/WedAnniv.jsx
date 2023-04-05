@@ -1,44 +1,44 @@
 import React, { useState } from "react";
 import "./WedAnniv1.css";
-import image from "../../Templates/WanniversaryTemp1.png";
+import imageWedAnniv1 from "../../Templates/WanniversaryTemp1.png";
 
 function WedAnniv1() {
 
-  const [headInvite,setHeadInvite] = useState('TOGEATHER WITH THEIR FAMILIES')
-  const [nameOne,setNameOne] = useState('Olivia Rodriques')
-  const [nameTwo,setNameTwo] = useState('Richard Jhonson')
-  const [footInvite,setFootInvite] = useState('Invite you to celebrate their marrage')
+  const [headInviteWedAnniv1,setHeadInviteWedAnniv1] = useState('TOGEATHER WITH THEIR FAMILIES')
+  const [nameOneWedAnniv1,setNameOneWedAnniv1] = useState('Olivia Rodriques')
+  const [nameTwoWedAnniv1,setNameTwoWedAnniv1] = useState('Richard Jhonson')
+  const [footInviteWedAnniv1,setFootInviteWedAnniv1] = useState('Invite you to celebrate their marrage')
 
   const handleChangeHeadInvite = (event) => {
-    setHeadInvite(event.target.value)
+    setHeadInviteWedAnniv1(event.target.value)
   }
 
   const handleChangeNameOne = (event) => {
-    setNameOne(event.target.value)
+    setNameOneWedAnniv1(event.target.value)
   }
 
   const handleChangeNameTwo = (event) => {
-    setNameTwo(event.target.value)
+    setNameTwoWedAnniv1(event.target.value)
   }
 
   const handleChangeFootInvite = (event) => {
-    setFootInvite(event.target.value)
+    setFootInviteWedAnniv1(event.target.value)
   }
 
   return (
     <div className="WedAnniv1">
-      <img src={image} alt="WeddingTemp1" className="WedAnniv1Img" />
+      <img src={imageWedAnniv1} alt="WeddingTemp1" className="WedAnniv1Img" />
       <div class="WedAnniv1subContainer">
         <div className="WedAnniv1Whead">
-          <textarea id="WedAnniv1headInvite" value={headInvite} onChange={handleChangeHeadInvite}>
+          <textarea id="WedAnniv1headInvite" value={headInviteWedAnniv1} onChange={handleChangeHeadInvite}>
           </textarea>
         </div>
         <div className="WedAnniv1Wbody">
-          <h2 id="WedAnniv1nameOneInvite"  onChange={handleChangeNameOne} contentEditable>{nameOne}</h2>
-          <h2 id="WedAnniv1nameTwoInvite" value={nameTwo} onChange={handleChangeNameTwo} contentEditable>{nameTwo}</h2>
+          <h2 id="WedAnniv1nameOneInvite"  onChange={handleChangeNameOne} contentEditable>{nameOneWedAnniv1}</h2>
+          <h2 id="WedAnniv1nameTwoInvite" value={nameTwoWedAnniv1} onChange={handleChangeNameTwo} contentEditable>{nameTwoWedAnniv1}</h2>
         </div>
         <div className="Wfoot">
-          <textarea id="WedAnniv1footInvite" value={footInvite} onChange={handleChangeFootInvite}>
+          <textarea id="WedAnniv1footInvite" value={footInviteWedAnniv1} onChange={handleChangeFootInvite}>
           </textarea>
         </div>
       </div>

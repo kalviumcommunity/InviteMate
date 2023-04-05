@@ -26,7 +26,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-80%,-200%);
+    transform: translate(-80%,-260%);
     padding: 0.08em 0.05em 0.1em 0.05em;
     font-size: 2.5vmin;
     font-weight: 300;
@@ -53,7 +53,7 @@
     max-height: 2em;
     top: 50%;
     left: 50%;
-    transform: translate(-48%,12%);
+    transform: translate(-48%,-30%);
     font-size: 8vmin;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0);

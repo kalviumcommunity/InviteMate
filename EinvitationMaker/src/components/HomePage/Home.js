@@ -9,6 +9,7 @@ function Home() {
 
   const [load,setLoad] = useState(true)
 
+
   setTimeout(() => {
     setLoad(false)
   },2200)

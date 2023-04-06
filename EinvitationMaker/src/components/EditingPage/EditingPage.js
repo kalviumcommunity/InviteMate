@@ -216,7 +216,7 @@ function EditingPage() {
     });
 
     if (isAuthenticated) {
-      fetch("http://localhost:4000/editing", {
+      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER , {
         method: "POST",
         body: JSON.stringify({
           username: user.name,

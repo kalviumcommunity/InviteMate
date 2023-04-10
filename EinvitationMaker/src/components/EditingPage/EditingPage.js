@@ -211,7 +211,7 @@ function EditingPage() {
       scrollY: -window.scrollY,
     }).then((canvas) => {
       canvas.toBlob((blob) => {
-        saveAs(blob, "template.png");
+        saveAs(blob, `${finalTemp.type.name}.png`);
       });
     });
 

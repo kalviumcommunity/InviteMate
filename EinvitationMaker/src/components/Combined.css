@@ -127,6 +127,7 @@ background-color: #000000;
 
 .categories {
   background-color: black;
+  cursor: pointer;
 }
 
 .greetingsContainer {
@@ -267,13 +268,14 @@ background-color: #000000;
 
 .TemplateContainer{
   height: 22vmin;
-  width: 25vmin;
+  width: 26vmin;
   min-height: 10em;
-  overflow: hidden;
   min-width: 12em;
+  max-height: 12em;
+  max-width: 14em;
+  overflow: hidden;
   border-radius: 0.2em;
   box-shadow: 1px 1px 10px rgb(88, 88, 88);
-
   background-color: rgb(221, 219, 219);
   margin: 1vmin 3.5vmin 1vmin 3.5vmin;
   transform: scale(1.2);
@@ -447,187 +449,6 @@ background-color: #000000;
   /* background-color: #e100ff; */
 }
 
-/* .formContainer {
-  border: 1em solid black;
-  border-style: double;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: radial-gradient(circle at bottom right, #3300ff, #ffffff);
- 
-} */
-
-/* .form {
-  height: min-content;
-  position: absolute;
-  width: 55%;
-  border: 3px solid #000000;
-  padding: 1.5em;
-  border-radius: 5px;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-  box-shadow: 5px 5px 30px black;
-  background-color: #ffffff;
-} */
-
-/* .divider{
-  border: 0.08em solid rgb(128, 124, 124);
-  width: 40vmin;
-  margin-top: 1em;
-  margin-bottom: 0.7em;
-} */
-
-
-
-
-/* .enterButtons{
-  font-size: 5vmin;
-  height: 10vmin;
-  width: 40vmin;
-}
-
-
-#loginButtonOnly{
-  height: 7vmin;
-  width: 20vmin;
-  background-color: rgb(126, 242, 255);
-  font-size: 2.8vmin;
-  font-weight: 600;
-  border-radius: 0.2em;
-  cursor: pointer;
-  margin-top: 1em;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-} */
-
-
-/* #registerButton{
-  height: 7vmin;
-  width: 20vmin;
-  background-color: rgb(126, 242, 255);
-  font-size: 2.8vmin;
-  font-weight: 600;
-  border-radius: 0.3em;
-  cursor: pointer;
-  margin-top: 1em;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-}
-
-.login #loginButtonOnly{
-  background-color: black;
-  color: white;
-}
-
-.login #registerButton{
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-} */
-
-/* .input {
-  height: 5vmin;
-  width: 38vmin;
-  background-color: rgb(225, 225, 225);
-  margin-bottom: 0.5%;
-  border-radius: 0.2em;
-  padding-left: 0.5em;
-  font-size: 2.5vmin;
-  font-weight: 500;
-}
-
-.input:hover {
-  transform: scale();
-  background-color: rgb(245, 245, 245);
-}
-
-#createAcc {
-  font-size: 4.2vmin;
-  margin-bottom: 0.2em;
-} */
-
-/* .buttons {
-  height: 6vmin;
-  width: 35vmin;
-  background-color: rgb(126, 242, 255);
-  font-size: 2.8vmin;
-  right: 20%;
-  font-weight: 600;
-  border-radius: 0.3em;
-  cursor: pointer;
-  margin-top: 1em;
-  color: orangered;
-  background-color: black;
-} */
-
-/* .buttons:hover {
-  transform: scale(1.1);
-  transition: 200ms ease-in-out;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 238, 2);
-  font-size: 3vmin;
-  font-weight: 700;
-}
-
-.error {
-  color: red;
-  font-size: 1.8vmin;
-} */
-/* 
-#submit {
-  height: 6vmin;
-  width: 40vmin;
-  background-color: rgb(126, 242, 255);
-  font-size: 2.8vmin;
-  right: 20%;
-  font-weight: 600;
-  border-radius: 0.3em;
-  cursor: pointer;
-  margin-top: 1em;
-  color: orangered;
-  background-color: black;
-} */
-/* 
-#orId{
-  margin: 0.4em;
-} */
-
-/* #googleButton{
-  height: 6vmin;
-  width: 40vmin;
-  background-color: rgb(126, 242, 255);
-  font-size: 2.8vmin;
-  right: 20%;
-  font-weight: 600;
-  border-radius: 0.3em;
-  cursor: pointer;
-  color: orangered;
-  background-color: black;
-} */
-
-/* #logInText{
-  text-decoration:underline;
-}
-
-.formDetails {
-  font-size: 3.6vmin;
-  margin-top: 0.4em;
-  background-color: #ffffff;
-}
-
-.user {
-  color: #4af3ff;
-}
-
-.accountLine{
-  margin-top: 0.2em ;
-} */
-
 .loaderContainer{
   height: 100vh;
   width: 100vw;
@@ -639,10 +460,6 @@ background-color: #000000;
 
 .insideCategoryTemplatesContainer .loaderContainer{
   height: 100%;
-  /* color: #e100ff; */
-  /* background: linear-gradient(to right, #e100ff, #00ddffd0); */
-
-  /* border: 1em solid black; */
 }
 
 

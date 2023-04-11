@@ -1,10 +1,11 @@
-import React from "react";
+import React,{ useContext } from "react";
 import "./Combined.css";
 import logo from "./Templates/InviteMate logo.png";
 import headingData from "./CategoriesData";
 import { useNavigate } from "react-router-dom";
 import LoginButton from "./LoginButton";
 import EditPageSave from "./EditPageSave";
+import { appContext } from "./AppContext";
 // import Button from '@mui/material/Button';
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
@@ -13,20 +14,19 @@ import EditPageSave from "./EditPageSave";
 
 export default function Navbar({ handleDownload }) {
   const navigate = useNavigate();
+  // const context = useContext(appContext)
+  // const reference = useRef(null);
 
-  const redirect = () => {
-    navigate("/");
-  };
+  const { updateSelectedCategory } = useContext(appContext)
 
-  // const [anchorEl, setAnchorEl] = React.useState(null);
-  // const open = Boolean(anchorEl);
-  // const handleClick = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-  // const handleClose = () => {
-  //   setAnchorEl(null);
-  // };
+  const handleScroll = (data) => {
+    // reference.scrollIntoView()
+    // setChosenHeading(data)
+    // console.log(data)
+    updateSelectedCategory(data)
+    // context.setSelectedCategory(data)
 
+  }
 
   return (
     <div className="navBar">
@@ -40,10 +40,14 @@ export default function Navbar({ handleDownload }) {
       </div>
       <div className="bottomNavBar">
         {headingData.map((category) => (
-          <h2 key={category.id} className="categories">
+          // <Link to={`/${category.title}`} >
+          <h2 key={category.id} className="categories" onClick={() => handleScroll(category.title)}>
             {category.title}
           </h2>
+          
+          // { </Link> }
         ))}
+        {/* <h1 style={{"color":"black"}}>selectedCategory: {selectedCategory}</h1> */}
        
       </div>
     </div>

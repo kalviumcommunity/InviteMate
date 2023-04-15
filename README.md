@@ -51,7 +51,7 @@ Update on PR's
 
 Progress Tracker
 
-Topic Number Topics Covered| Status | PR-number | date |
+Topic Number | Topics Covered| Status | PR-number | date |
 --- | --- | --- | --- | --- |
  1 | Seconds | 301 | 283 | 290 |
 

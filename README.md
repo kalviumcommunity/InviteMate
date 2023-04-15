@@ -7,7 +7,7 @@ Description - "This online E-invitation Maker website offers a wide variety of d
 Target Audience - "The website is targeted towards event-planners/individuals who are looking for an easy-to-use, affordable solution to create high-quality, personalized digital invitations for various occasions, such as weddings, birthdays, and other events." 
 
 Project URLs
-😍 [Frontend]([www.google.com](https://invitemate.netlify.app/))
+😍 [Frontend](https://invitemate.netlify.app/)
 
 ✌️ [Backend API](https://invitemate.onrender.com/)
 

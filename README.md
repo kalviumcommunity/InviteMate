@@ -51,12 +51,13 @@ Update on PR's
 
 Progress Tracker
 
-Topics
-Covered| Status | PR-number | date |
---- | --- | --- | --- |
-Seconds | 301 | 283 | 290 |
---- | --- | --- | --- |
-third | 301 | 283 | 290 |
+Topic Number Topics Covered| Status | PR-number | date |
+--- | --- | --- | --- | --- |
+ 1 | Seconds | 301 | 283 | 290 |
+
+ 2 |third | 301 | 283 | 290 |
+ 
+  3 |four | 301 | 283 | 290 |
 
 Help in implementing parts of the code  -
 Loader, backend source recommendation, mapping logic - Piyush Negi,

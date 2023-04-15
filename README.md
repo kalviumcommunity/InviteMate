@@ -64,6 +64,7 @@ Progress Tracker
   2 | Nodemon installed | ✔️ | 283 | 290 |
   3 | NPM dependency | ✔️ | 283 | 290 |
   18| Middlewares | ✔️ | 283 | 290 |
+  
  ~ | DATABASE | 👇 |	🔗	| 🗓️ |
   8 | MongoDB - Installations and Basics | ✔️ | 283 | 290 |
  13 | Mongoose | ✔️ | 283 | 290 |
@@ -83,9 +84,6 @@ Progress Tracker
  19 | Loader | ✔️ | 283 | 290 |
 
 
-
-
-
  
 
 Help in implementing parts of the code  -
@@ -93,19 +91,6 @@ Loader, backend source recommendation, mapping logic - Piyush Negi,
 Design - Aditya Anand,
 Auth0 - Anmol Singh.
 
-Progress Tracking
-Content	Status	Resource Link	Check-In
-Back-end	👇	🔗	🗓️
-NodeJs - setting up a project with package.json	✔️	PR #1	20th March
-NodeJS Modules	✔️	PR #15	3rd April
-fs Module	✔️	PR #15	3rd April
-Streams and Buffers		-	
-NPM	✔️	PR #1	20th March
-Nodemon	✔️	PR #1	20th March
-Events in Nodejs		-	
-Express JS - first route	✔️	PR #1	20th March
-ExpressJS - additional routes	✔️	PR #7	20th March
-Template Engines		-	
 
 
 

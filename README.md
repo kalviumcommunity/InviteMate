@@ -64,7 +64,6 @@ Progress Tracker
   2 | Nodemon installed | ✔️ | 283 | 290 |
   3 | NPM dependency | ✔️ | 283 | 290 |
   18| Middlewares | ✔️ | 283 | 290 |
-  
  ~ | DATABASE | 👇 |	🔗	| 🗓️ |
   8 | MongoDB - Installations and Basics | ✔️ | 283 | 290 |
  13 | Mongoose | ✔️ | 283 | 290 |

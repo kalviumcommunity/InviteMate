@@ -50,8 +50,8 @@ Update on PR's
 19. Loader
 
 Attempt | #1 | #2 | #3 |
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+--- | --- | --- | --- |
+Seconds | 301 | 283 | 290 |
 
 Help in implementing parts of the code  -
 Loader, backend source recommendation, mapping logic - Piyush Negi,

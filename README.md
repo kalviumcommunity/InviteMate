@@ -51,11 +51,36 @@ Update on PR's
 
 Progress Tracker
 
-Topic Number | Topics Covered| Status | PR-number | date |
+ S.No | Topics Covered| Status | PR-number | date |
 --- | --- | --- | --- | --- |
- 1 | Seconds | 301 | 283 | 290 |
- 2 | third | 301 | 283 | 290 |
- 3 |four | 301 | 283 | 290 |
+ ~ | BACK-END | 👇 |	🔗	| 🗓️ |
+ 1 | NodeJs - working with package.json | ✔️ | 283 | 290 |
+ 2 | Nodemon installed | ✔ | 283 | 290 |
+ 3 | NPM dependency | ✔️ | 283 | 290 |
+ 18 | Middlewares | ✔ | 283 | 290 |
+ ~ | DATABASE | 👇 |	🔗	| 🗓️ |
+ 8 | MongoDB - Installations and Basics | 301 | 283 | 290 |
+ 13 | Mongoose | 301 | 283 | 290 |
+ 14 | CRUD Operations | 301 | 283 | 290 |
+ 15 | Simple API - CRUD Operations using NodeJs | 301 | 283 | 290 |
+ 16 | Schemas and Models | 301 | 283 | 290 |
+ ~ | FRONT-END | 👇 |	🔗	| 🗓️ |
+ 4 | IDE Setup | 301 | 283 | 290 |
+ 5 | ReactJS app initialization | 301 | 283 | 290 |
+ 6 | NPM dependency | 301 | 283 | 290 |
+ 7 | Using the public folder to serve files | 301 | 283 | 290 |
+ 9 | High-fid design for your application | 301 | 283 | 290 |
+ 10 | Low-fid design for your application | 301 | 283 | 290 |
+ 11 | Application deployed | 301 | 283 | 290 |
+ 12 | Authentication | 301 | 283 | 290 |
+ 17 | Deployment | 301 | 283 | 290 |
+ 19 | Loader | 301 | 283 | 290 |
+
+
+
+
+
+ 
 
 Help in implementing parts of the code  -
 Loader, backend source recommendation, mapping logic - Piyush Negi,

@@ -96,6 +96,8 @@ Loader, backend source recommendation, mapping logic - Piyush Negi,
 Design - Aditya Anand,
 Auth0 - Anmol Singh.
 
+Readme.Md format credits - @nikiljos
+
 
 
 

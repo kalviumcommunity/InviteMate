@@ -15,6 +15,33 @@ Project URLs
 
 Figma Link - https://www.figma.com/proto/4IaggNNg9hsGvBbmtWxwSw/InviteMate?node-id=5%3A4&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A4&show-proto-sidebar=1
 
+Progress Tracker
+
+ S.No | Topics Covered| Status | PR-number | date |
+--- | --- | --- | --- | --- |
+ ~ | BACK-END | 👇 |	🔗	| 🗓️ |
+  1 | NodeJs - working with package.json | ✔️ | 283 | 290 |
+  2 | Nodemon installed | ✔️ | 283 | 290 |
+  3 | NPM dependency | ✔️ | 283 | 290 |
+  18| Middlewares | ✔️ | 283 | 290 |
+ ~ | DATABASE | 👇 |	🔗	| 🗓️ |
+  8 | MongoDB - Installations and Basics | ✔️ | 283 | 290 |
+ 13 | Mongoose | ✔️ | 283 | 290 |
+ 14 | CRUD Operations | ✔️ | 283 | 290 |
+ 15 | Simple API - CRUD Operations using NodeJs | ✔️ | 283 | 290 |
+ 16 | Schemas and Models | ✔️ | 283 | 290 |
+ ~ | FRONT-END | 👇 |	🔗	| 🗓️ |
+  4 | IDE Setup | ✔️ | 283 | 290 |
+  5 | ReactJS app initialization | ✔️ | 283 | 290 |
+  6 | NPM dependency | ✔️ | 283 | 290 |
+  7 | Using the public folder to serve files | ✔️ | 283 | 290 |
+  9 | High-fid design for your application | ✔️ | 283 | 290 |
+ 10 | Low-fid design for your application | ✔️ | 283 | 290 |
+ 11 | Application deployed | ✔️ | 283 | 290 |
+ 12 | Authentication | ✔️ | 283 | 290 |
+ 17 | Deployment | ✔️ | 283 | 290 |
+ 19 | Loader | ✔️ | 283 | 290 |
+
 Update on PR's
 
 1. NodeJs - working with package.json
@@ -54,35 +81,6 @@ Update on PR's
 18. Middlewares
 
 19. Loader
-
-Progress Tracker
-
- S.No | Topics Covered| Status | PR-number | date |
---- | --- | --- | --- | --- |
- ~ | BACK-END | 👇 |	🔗	| 🗓️ |
-  1 | NodeJs - working with package.json | ✔️ | 283 | 290 |
-  2 | Nodemon installed | ✔️ | 283 | 290 |
-  3 | NPM dependency | ✔️ | 283 | 290 |
-  18| Middlewares | ✔️ | 283 | 290 |
- ~ | DATABASE | 👇 |	🔗	| 🗓️ |
-  8 | MongoDB - Installations and Basics | ✔️ | 283 | 290 |
- 13 | Mongoose | ✔️ | 283 | 290 |
- 14 | CRUD Operations | ✔️ | 283 | 290 |
- 15 | Simple API - CRUD Operations using NodeJs | ✔️ | 283 | 290 |
- 16 | Schemas and Models | ✔️ | 283 | 290 |
- ~ | FRONT-END | 👇 |	🔗	| 🗓️ |
-  4 | IDE Setup | ✔️ | 283 | 290 |
-  5 | ReactJS app initialization | ✔️ | 283 | 290 |
-  6 | NPM dependency | ✔️ | 283 | 290 |
-  7 | Using the public folder to serve files | ✔️ | 283 | 290 |
-  9 | High-fid design for your application | ✔️ | 283 | 290 |
- 10 | Low-fid design for your application | ✔️ | 283 | 290 |
- 11 | Application deployed | ✔️ | 283 | 290 |
- 12 | Authentication | ✔️ | 283 | 290 |
- 17 | Deployment | ✔️ | 283 | 290 |
- 19 | Loader | ✔️ | 283 | 290 |
-
-
  
 
 Help in implementing parts of the code  -

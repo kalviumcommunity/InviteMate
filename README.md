@@ -4,14 +4,55 @@ This is an E-Invitation Maker Website.
 
 Description - "This online E-invitation Maker website offers a wide variety of design templates that users can select, customize to their liking, and then download their finished digital invitations."
 
-Target Audience - "The website is targeted towards individuals who are looking for an easy-to-use, affordable solution to create high-quality, personalized digital invitations for various occasions, such as weddings, birthdays, and other events." 
+Target Audience - "The website is targeted towards event-planners/individuals who are looking for an easy-to-use, affordable solution to create high-quality, personalized digital invitations for various occasions, such as weddings, birthdays, and other events." 
 
+Project URLs
+
+😍 [Frontend](https://invitemate.netlify.app/)
+
+✌️ [Backend API](https://invitemate.onrender.com/)
+
+👉 [API Doc](https://documenter.getpostman.com/view/26294427/2s93RZMVH8)
 
 Figma Link - https://www.figma.com/proto/4IaggNNg9hsGvBbmtWxwSw/InviteMate?node-id=5%3A4&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A4&show-proto-sidebar=1
 
+Progress Tracker
+
+ S.No | Topics Covered| Status | PR-number | date |
+--- | --- | --- | --- | --- |
+ ~ | BACK-END | 👇 |	🔗	| 🗓️ |
+  1 | NodeJs - setting up a project with package.json | ✔️ | 283 | 290 |
+  2 | NodeJS Modules | nope | 283 | 290 |
+  5 | NPM | ✔️ | 283 | 290 |
+  6 | Nodemon  | ✔️ | 283 | 290 |
+  7 | Events in NodeJs | ✔️ | 283 | 290 |
+  8 | Express JS - first route | nope | 283 | 290 |
+  9 | Express JS - additional routes | nope | 283 | 290 |
+  12| Middlewares | ✔️ | 283 | 290 |
+ ~ | DATABASE | 👇 |	🔗	| 🗓️ |
+ 13 | MongoDB - Installations and Basics | ✔️ | 283 | 290 |
+ 14 | Mongoose | ✔️ | 283 | 290 |
+ 15 | CRUD Operations | ✔️ | 283 | 290 |
+ 16 | Simple API - CRUD Operations using NodeJs | ✔️ | 283 | 290 |
+ 17 | Schemas and Models | ✔️ | 283 | 290 |
+ 18 | Indexes | nope | 283 | 290 |
+ ~ | FRONT-END | 👇 |	🔗	| 🗓️ |
+ 20 | Low-fid design for your application | ✔️ | 283 | 290 |
+ 21 | High-fid design for your application | ✔️ | 283 | 290 |
+ 22 | ReactJS app initialization | ✔️ | 283 | 290 |
+ 23 | Application components created | nope | 283 | 290 | 
+ 24 | Application deployed | ✔️ | 283 | 290 |
+ 25 | IDE Setup | ✔️ | 283 | 290 |
+ 26 | NodeJs REPL | ✔️ | 283 | 290 |
+ 27 | Using the public folder to serve files | ✔️ | 283 | 290 |
+ 28 | Postman Use for Testing | ✔️ | 283 | 290 | 
+ 29 | Authentication | ✔️ | 283 | 290 |
+ 30 | Deployment | ✔️ | 283 | 290 |
+ 31 | Loader | ✔️ | 283 | 290 |
+
 Update on PR's
 
-1. NodeJs - working with package.json
+1. NodeJs - setting up a project with package.json
 
 2. Nodemon installed
 
@@ -48,12 +89,14 @@ Update on PR's
 18. Middlewares
 
 19. Loader
+ 
 
 Help in implementing parts of the code  -
 Loader, backend source recommendation, mapping logic - Piyush Negi,
 Design - Aditya Anand,
 Hosting backend in render - Chandan SM (@Chandan-Gowda-Kalvium)
 
+Readme.Md format credits - @nikiljos
 
 
 

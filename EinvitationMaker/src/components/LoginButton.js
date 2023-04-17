@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./Combined.css";
 
@@ -12,11 +12,6 @@ function LoginButton() {
   const openModel = () => {
     logout({ logoutParams: { returnTo: window.location.origin } });
   };
-
-  // useEffect(()=>{
-  //   getAccessTokenSilently().then(res=>console.log("here we go",res))
-  //   .catch(err=>console.log("oh no",err))
-  // },[isAuthenticated])
   
 
   return (

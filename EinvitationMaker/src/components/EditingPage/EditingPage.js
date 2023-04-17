@@ -153,6 +153,7 @@ function EditingPage() {
   const { isAuthenticated, user } = useAuth0();
 
   const state = useLocation();
+  // console.log(state)
 
   const templateRef = useRef();
 
@@ -162,6 +163,7 @@ function EditingPage() {
 
   const temp = templates.find((each) => each.id === idNum);
   const finalTemp = temp?.temp;
+  // console.log(finalTemp.type.name)
 
   // console.log(user.name, idNum, finalTemp?.type?.name);
 
@@ -212,7 +214,8 @@ function EditingPage() {
     }).then((canvas) => {
       canvas.toBlob((blob) => {
         saveAs(blob, `${finalTemp.type.name}.png`);
-      });
+      })
+      .catch((error)=> console.log(error))
     });
 
     if (isAuthenticated) {
@@ -240,6 +243,7 @@ function EditingPage() {
   }, 1200);
 
   return (
+  // <h1>d</h1>
     <>
       {load ? (
         <Loader />
@@ -247,7 +251,6 @@ function EditingPage() {
         <div className="editingNavBar">
           <Navbar handleDownload={handleDownload} />
           <Back />
-          {/* {temp?.temp} */}
           <div id="#editPageContainer" style={{display:"flex",justifyContent:"center" }}>
             <div ref={templateRef} style={{
               width:"fit-content",

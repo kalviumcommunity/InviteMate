@@ -77,7 +77,7 @@ background-color: #000000;
   width: auto;
   display: flex;
   align-items: center;
-  border: 0.2em solid rgb(0, 0, 0);
+  /* border: 0.2em solid rgb(0, 0, 0); */
   font-weight: 700;
   padding: 0.2em;
   border-radius: 0.4em;
@@ -460,6 +460,11 @@ background-color: #000000;
 
 .insideCategoryTemplatesContainer .loaderContainer{
   height: 100%;
+}
+
+.controllable-states-demo{
+  color: aqua;
+  background-color: #e100ff;
 }
 
 

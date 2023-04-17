@@ -10,7 +10,6 @@ import { appContext } from "./AppContext";
 // import Menu from '@mui/material/Menu';
 // import MenuItem from '@mui/material/MenuItem';
 
-// import {useNav}
 
 export default function Navbar({ handleDownload }) {
   const navigate = useNavigate();
@@ -45,7 +44,7 @@ export default function Navbar({ handleDownload }) {
             {category.title}
           </h2>
           
-          // { </Link> }
+          // {/* </Link>  */}
         ))}
         {/* <h1 style={{"color":"black"}}>selectedCategory: {selectedCategory}</h1> */}
        

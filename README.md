@@ -52,7 +52,7 @@ Update on PR's
 Help in implementing parts of the code  -
 Loader, backend source recommendation, mapping logic - Piyush Negi,
 Design - Aditya Anand,
-Auth0 - Anmol Singh.
+Hosting backend in render - Chandan SM (@Chandan-Gowda-Kalvium)
 
 
 

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 // import headingData from './CategoriesData'
 import "../Combined.css";
-import btemp1 from "../Templates/btemp1SS.png";
-import wtemp1 from "../Templates/Wed1SS.png";
+// import btemp1 from "../Templates/btemp1SS.png";
+// import wtemp1 from "../Templates/Wed1SS.png";
 import { useNavigate } from "react-router-dom";
 import Loader from "../Loader";
 

@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 //routes
 app.use("/editing", downloadRoutes);
 app.get('/',(req,res) => {
-    res.json({msg:'Welcome to the port 4000 now'})
+    res.json({msg:'Welcome to the port now'})
 })
 
 //connect to DB

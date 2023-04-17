@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Navbar from '../Navbar';
 import CategoryHeading from './CategoryHeading';
 import CategoryTemplateContainer from './CategoryTemplateContainer';
-import {Link, useLocation, useNavigate, useParams} from 'react-router-dom'
+import { useLocation, useNavigate} from 'react-router-dom'
 import headingData from '../CategoriesData';
 
 function Category() {
@@ -13,7 +13,7 @@ function Category() {
 
 
   const {state} = useLocation()
-  const { category } = useParams();
+  // const { category } = useParams();
   // console.log(category)
 
   useEffect(()=>{

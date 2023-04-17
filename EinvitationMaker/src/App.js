@@ -30,6 +30,8 @@ function App() {
           <Route path={`/editing`} element={<EditingPage/>}/>
           <Route path={`/Wtemp1`} element={<Wtemp1/>}/>
           <Route path={`/Btemp1`} element={<Btemp1/>}/>
+          {/* <Route path={`/editing`} element={<EditingPage/>}/> */}
+
 
 
           {/* <Route path={`/Wtemp1`} element={<Wtemp1/>}/> */}

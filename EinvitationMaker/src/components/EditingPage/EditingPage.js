@@ -9,14 +9,13 @@ import WedAnniv1 from "../categories/WedAnniv1/WedAnniv";
 import html2canvas from "html2canvas";
 import { saveAs } from "file-saver";
 import { useAuth0 } from "@auth0/auth0-react";
+import { motion } from "framer-motion";
+import Back from "../Back";
+import Loader from "../Loader";
 // import domtoimage from 'dom-to-image';
-
-
 // import btemp1 from "./Templates/btemp1SS.png";
 // import wtemp1 from "./Templates/Wed1SS.png";
 // import wedAnniv1 from "./Templates/wedAnnivSS.png";
-import Back from "../Back";
-import Loader from "../Loader";
 
 function EditingPage() {
   const templates = [
@@ -205,26 +204,26 @@ function EditingPage() {
   //       .catch((err) => console.log(err));
   //   }
   // };
-  
 
   const handleDownload = () => {
     html2canvas(templateRef.current, {
       logging: true,
       scrollY: -window.scrollY,
     }).then((canvas) => {
-      canvas.toBlob((blob) => {
-        saveAs(blob, `${finalTemp.type.name}.png`);
-      })
-      .catch((error)=> console.log(error))
+      canvas
+        .toBlob((blob) => {
+          saveAs(blob, `${finalTemp.type.name}.png`);
+        })
+        .catch((error) => console.log(error));
     });
 
     if (isAuthenticated) {
-      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER , {
+      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER, {
         method: "POST",
         body: JSON.stringify({
           username: user.name,
           templateID: idNum,
-          template: finalTemp?.type.name
+          template: finalTemp?.type.name,
         }),
         headers: {
           "Content-type": "application/json; charset=UTF-8",
@@ -243,7 +242,7 @@ function EditingPage() {
   }, 1200);
 
   return (
-  // <h1>d</h1>
+    // <h1>d</h1>
     <>
       {load ? (
         <Loader />
@@ -251,16 +250,29 @@ function EditingPage() {
         <div className="editingNavBar">
           <Navbar handleDownload={handleDownload} />
           <Back />
-          <div id="#editPageContainer" style={{display:"flex",justifyContent:"center" }}>
-            <div ref={templateRef} style={{
-              width:"fit-content",
-              height:"fit-content",
-              position:"absolute",
-              justifySelf:"center"
-            }}>
-            {finalTemp}
+          <motion.div
+            className="template"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+          >
+            <div
+              id="#editPageContainer"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <div
+                ref={templateRef}
+                style={{
+                  width: "fit-content",
+                  height: "fit-content",
+                  position: "absolute",
+                  justifySelf: "center",
+                }}
+              >
+                {finalTemp}
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       )}
     </>

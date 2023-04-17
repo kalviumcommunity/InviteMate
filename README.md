@@ -22,12 +22,13 @@ Progress Tracker
 --- | --- | --- | --- | --- |
  ~ | BACK-END | 👇 |	🔗	| 🗓️ |
   1 | NodeJs - setting up a project with package.json | ✔️ | 283 | 290 |
-  2 | NodeJS Modules | nope | 283 | 290 |
+  2 | NodeJS Modules | ✔️ | 283 | 290 |
+  3 | fs Module | ✔️ | 283 | 290 |
   5 | NPM | ✔️ | 283 | 290 |
   6 | Nodemon  | ✔️ | 283 | 290 |
   7 | Events in NodeJs | ✔️ | 283 | 290 |
-  8 | Express JS - first route | nope | 283 | 290 |
-  9 | Express JS - additional routes | nope | 283 | 290 |
+  8 | Express JS - first route | ✔️ | 283 | 290 |
+  9 | Express JS - additional routes | ✔️ | 283 | 290 |
   12| Middlewares | ✔️ | 283 | 290 |
  ~ | DATABASE | 👇 |	🔗	| 🗓️ |
  13 | MongoDB - Installations and Basics | ✔️ | 283 | 290 |
@@ -35,12 +36,12 @@ Progress Tracker
  15 | CRUD Operations | ✔️ | 283 | 290 |
  16 | Simple API - CRUD Operations using NodeJs | ✔️ | 283 | 290 |
  17 | Schemas and Models | ✔️ | 283 | 290 |
- 18 | Indexes | nope | 283 | 290 |
+ 18 | Indexes | ✔️ | 283 | 290 |
  ~ | FRONT-END | 👇 |	🔗	| 🗓️ |
  20 | Low-fid design for your application | ✔️ | 283 | 290 |
  21 | High-fid design for your application | ✔️ | 283 | 290 |
  22 | ReactJS app initialization | ✔️ | 283 | 290 |
- 23 | Application components created | nope | 283 | 290 | 
+ 23 | Application components created | ✔️ | 283 | 290 | 
  24 | Application deployed | ✔️ | 283 | 290 |
  25 | IDE Setup | ✔️ | 283 | 290 |
  26 | NodeJs REPL | ✔️ | 283 | 290 |
@@ -49,6 +50,11 @@ Progress Tracker
  29 | Authentication | ✔️ | 283 | 290 |
  30 | Deployment | ✔️ | 283 | 290 |
  31 | Loader | ✔️ | 283 | 290 |
+ 32 | Context API | ✔️ | 283 | 290 |
+ 33 | MaterialUI | ✔️ | 283 | 290 |
+ 34 | Framer Library | ✔️ | 283 | 290 |
+
+ 
 
 Update on PR's
 
@@ -89,6 +95,28 @@ Update on PR's
 18. Middlewares
 
 19. Loader
+
+20. NodeJS Modules
+
+21. Express JS - first route
+
+22. Express JS - additional route
+
+23. Events in Nodejs
+
+24. Indexes
+
+25. fs Module
+
+26. NodeJs REPL
+
+27. Postman Use for Testing
+
+28. Context API
+
+29. MaterialUI
+
+30. Framer Library
  
 
 Help in implementing parts of the code  -

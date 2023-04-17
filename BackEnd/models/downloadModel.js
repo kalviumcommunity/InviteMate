@@ -15,6 +15,7 @@ const downloadSchema = new Schema(
     template: {
       type: String,
       required: true,
+      index:true
     },
     Btemp1: {
       nameBtemp1: {

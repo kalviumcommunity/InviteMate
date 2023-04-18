@@ -38,7 +38,7 @@ function Category() {
           <div className='nav'>
             <Navbar/>
           </div>
-            <CategoryHeading setSelectedButton={setSelectedButton} single={single} setLoader={setLoader} />
+            <CategoryHeading setSelectedButton={setSelectedButton} selectedButton={selectedButton} single={single} setLoader={setLoader} />
           {/* </div> */}
           <CategoryTemplateContainer selectedButton={selectedButton} single={single} loader={loader} />
       </div>

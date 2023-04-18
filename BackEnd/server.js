@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors')
+const fs = require('fs')
 
 const downloadRoutes = require("./routes/downloads");
 
@@ -31,6 +32,7 @@ mongoose
     //listen for request
     app.listen(process.env.PORT, () => {
       console.log("Connected to DB & Listening on port", process.env.PORT);
+      fs.appendFileSync("Connection.txt", "BackendServer connected to MongoDB");
     });
   })
   .catch((error) => {

@@ -30,11 +30,11 @@ function LoginButton() {
       {logOut && (
         <div className="questionContainer">
           <div className="question">Would you like to Log Out?</div>
-          <div>
-            <button onClick={() => openModel()} className="buttonOptions">
+          <div className="logoutOptions">
+            <button onClick={() => openModel()} className="yesbuttonOptions">
               Yes
             </button>
-            <button onClick={() => setLogOut(false)} className="buttonOptions">
+            <button onClick={() => setLogOut(false)} className="nobuttonOptions">
               No
             </button>
           </div>

@@ -9,7 +9,7 @@ function Back() {
 
   return (
     <div>
-      <img src={back} alt='back' id='backImg' onClick={()=>navigate('../')}></img>
+      <img src={back} alt='back' id='backImg' onClick={()=>navigate(-1)}></img>
     </div>
   )
 }

@@ -1,21 +1,25 @@
 import React, { useContext, useRef, useEffect } from "react";
-import headingData from "../CategoriesData";
+// import headingData from "../CategoriesData";
 import rightArrow from "../Templates/arrow-right.svg";
 import { useNavigate } from "react-router-dom";
 import { appContext } from "../AppContext";
 
-function TemplateContainer() {
+function TemplateContainer(headingData) {
   const navigate = useNavigate();
   const reference = useRef({});
 
+  // const [headingData,setHeadingData] = useState()
+
   const { selectedCategory } = useContext(appContext);
+
+  // console.log(selectedCategory)
 
   const handleOnClickShowMore = (data) => {
     navigate(`/${data.title}`, { state: { title: data.title, id: data.id } });
   };
 
-  const handleClick = (data) => {
-    navigate("/editing", { state: { id: data.id, temp: data.template } });
+  const handleClick = (data,outerdata) => {
+    navigate("/editing", { state: { id: data.id, temp: data.template, title: data.title, data: data } });
   };
 
   useEffect(() => {
@@ -26,16 +30,28 @@ function TemplateContainer() {
     }
   }, [selectedCategory]);
 
+  // useEffect(() => {
+  //   function fetchData() {
+  //     fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER + "/editing/all")
+  //       .then((res) => res.json())
+  //       .then((data) => setHeadingData(data));
+  //   }
+
+  //   fetchData();
+  // }, []);
+
   return (
     <>
-      {headingData.map((data, index) => {
-        console.log(data);
+    {/* {console.log(headingData?)} */}
+
+      {headingData?.headingData?.map((data, index) => {
+        // console.log(data);
         return (
           <div className="templatesContainer" key={index}>
             <div className="topTemplatesContainer">
               <h1
                 className="categoryHeadings"
-                ref={(ref) => (reference.current[data.title] = ref )}
+                ref={(ref) => (reference.current[data.title] = ref)}
                 // id={data.title === selectedCategory ? "selectedHeading" : "not"}
               >
                 {/* {console.log(reference.current[data?.title])} */}
@@ -55,16 +71,19 @@ function TemplateContainer() {
             </div>
             <div className="bottomTemplatesContainer">
               <div className="boxesContainer">
-                {data.subHeading.map((subData, index) => {
+                {data.subHeading.map((subData, index) => { 
+                  // console.log(subData)
                   return (
+                    <>
                     <img
-                      src={subData.template}
+                      src={subData?.template}
                       alt="template"
                       className="TemplateContainer"
                       key={index}
-                      onClick={() => handleClick(subData)}
-
+                      onClick={() => {handleClick(subData)}}
                     />
+                    {/* {console.log(data)} */}
+                    </>
                   );
                 })}
               </div>

@@ -1,6 +1,8 @@
 // import { Component } from 'react';
 import {Route, Routes} from 'react-router-dom'
 import './App.css';
+import EditingPage from './components/EditingPage/EditingPage'
+import Home from './components/HomePage/Home';
 import Category from './components/CategoryPage/Category';
 // import Greeting from './components/Greeting';
 import Btemp1 from './components/categories/Btemp1/Btemp1';
@@ -9,8 +11,8 @@ import Wtemp1 from './components/categories/wedding/Wtemp1/Wtemp1';
 // import Navbar from './components/Navbar';
 // import Greeting from './components/Greeting';
 // import TemplateContainer from './components/TemplateContainer';
-import EditingPage from './components/EditingPage/EditingPage'
-import Home from './components/HomePage/Home';
+
+// import Searchtest from './components/HomePage/Searchtest';
 
 
 
@@ -26,7 +28,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path={`/:id`} element={<Category/>} />
           {/* <Route path={`/:id/:s`} element={<Category/>} /> */}
-
+          {/* <Route path={`/Searchtest`} element={<Searchtest/>}/> */}
           <Route path={`/editing`} element={<EditingPage/>}/>
           <Route path={`/Wtemp1`} element={<Wtemp1/>}/>
           <Route path={`/Btemp1`} element={<Btemp1/>}/>

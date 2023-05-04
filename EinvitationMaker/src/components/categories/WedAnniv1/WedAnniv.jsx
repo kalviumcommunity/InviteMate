@@ -30,16 +30,16 @@ function WedAnniv1() {
       <img src={imageWedAnniv1} alt="WeddingTemp1" className="WedAnniv1Img" />
       <div class="WedAnniv1subContainer">
         <div className="WedAnniv1Whead">
-          <textarea id="WedAnniv1headInvite" value={headInviteWedAnniv1} onChange={handleChangeHeadInvite}>
-          </textarea>
+          <h3 id="WedAnniv1headInvite" contentEditable value={headInviteWedAnniv1} onChange={handleChangeHeadInvite}>{headInviteWedAnniv1}
+          </h3>
         </div>
         <div className="WedAnniv1Wbody">
           <h2 id="WedAnniv1nameOneInvite"  onChange={handleChangeNameOne} contentEditable>{nameOneWedAnniv1}</h2>
           <h2 id="WedAnniv1nameTwoInvite" value={nameTwoWedAnniv1} onChange={handleChangeNameTwo} contentEditable>{nameTwoWedAnniv1}</h2>
         </div>
         <div className="Wfoot">
-          <textarea id="WedAnniv1footInvite" value={footInviteWedAnniv1} onChange={handleChangeFootInvite}>
-          </textarea>
+          <h3 id="WedAnniv1footInvite" contentEditable value={footInviteWedAnniv1} onChange={handleChangeFootInvite}>{footInviteWedAnniv1}
+          </h3>
         </div>
       </div>
     </div>

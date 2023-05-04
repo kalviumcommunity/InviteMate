@@ -13,7 +13,8 @@ function CategoryHeading({setSelectedButton,selectedButton, single, setLoader}) 
 
 
   return (
-    <div className='categoryBar'>
+    <div className='categoryBar'>.
+    {console.log(single)}
       <div className='topCategoryBar'>
         <Link to={'/'}>
         <img src={leftArrow} alt='backArrow' id='backImage'></img>
@@ -27,6 +28,7 @@ function CategoryHeading({setSelectedButton,selectedButton, single, setLoader}) 
             {data.title}</h2>
           })}
         </div>
+        {/* <h1>{selectedButton}</h1> */}
       </div>
     </div>
   )

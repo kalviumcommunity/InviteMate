@@ -214,7 +214,6 @@ function EditingPage() {
         .toBlob((blob) => {
           saveAs(blob, `${finalTemp.type.name}.png`);
         })
-        .catch((error) => console.log(error));
     });
 
     if (isAuthenticated) {
@@ -243,13 +242,16 @@ function EditingPage() {
 
   return (
     // <h1>d</h1>
+  
     <>
+    {/* {console.log(state)} */}
       {load ? (
         <Loader />
       ) : (
         <div className="editingNavBar">
           <Navbar handleDownload={handleDownload} />
           <Back />
+          {/* <h1 id="nameOfCategory">{state.state.outerdata.title}</h1> */}
           <motion.div
             className="template"
             initial={{ opacity: 0 }}

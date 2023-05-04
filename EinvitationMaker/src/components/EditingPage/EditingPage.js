@@ -217,7 +217,7 @@ function EditingPage() {
     });
 
     if (isAuthenticated) {
-      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER, {
+      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER+"/editing", {
         method: "POST",
         body: JSON.stringify({
           username: user.name,

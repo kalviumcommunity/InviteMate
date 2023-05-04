@@ -1,4 +1,4 @@
-# Getting Started with InviteMate
+ # Getting Started with InviteMate
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

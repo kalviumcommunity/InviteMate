@@ -24,7 +24,7 @@ function Wtemp1() {
   return (
     <div className="Wtemp1">
       <img src={imageWtemp1} alt="WeddingTemp1" className="container" />
-      <div class="subContainer">
+      <div className="subContainer">
         <div className="Whead">
           <textarea id="headInvite" value={headInviteWtemp1} onChange={handleChangeHeadInvite}></textarea>
         </div>

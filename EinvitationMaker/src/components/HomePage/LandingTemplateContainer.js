@@ -1,10 +1,9 @@
 import React, { useContext, useRef, useEffect } from "react";
-import headingData from "../CategoriesData";
 import rightArrow from "../Templates/arrow-right.svg";
 import { useNavigate } from "react-router-dom";
 import { appContext } from "../AppContext";
 
-function TemplateContainer() {
+function TemplateContainer(headingData) {
   const navigate = useNavigate();
   const reference = useRef({});
 
@@ -14,8 +13,15 @@ function TemplateContainer() {
     navigate(`/${data.title}`, { state: { title: data.title, id: data.id } });
   };
 
-  const handleClick = (data) => {
-    navigate("/editing", { state: { id: data.id, temp: data.template } });
+  const handleClick = (data, outerdata) => {
+    navigate("/editing", {
+      state: {
+        id: data.id,
+        temp: data.template,
+        title: data.title,
+        data: data,
+      },
+    });
   };
 
   useEffect(() => {
@@ -28,17 +34,14 @@ function TemplateContainer() {
 
   return (
     <>
-      {headingData.map((data, index) => {
-        console.log(data);
+      {headingData?.headingData?.map((data, index) => {
         return (
           <div className="templatesContainer" key={index}>
             <div className="topTemplatesContainer">
               <h1
                 className="categoryHeadings"
-                ref={(ref) => (reference.current[data.title] = ref )}
-                // id={data.title === selectedCategory ? "selectedHeading" : "not"}
+                ref={(ref) => (reference.current[data.title] = ref)}
               >
-                {/* {console.log(reference.current[data?.title])} */}
                 {data.title}
               </h1>
               <div
@@ -57,14 +60,17 @@ function TemplateContainer() {
               <div className="boxesContainer">
                 {data.subHeading.map((subData, index) => {
                   return (
-                    <img
-                      src={subData.template}
-                      alt="template"
-                      className="TemplateContainer"
-                      key={index}
-                      onClick={() => handleClick(subData)}
-
-                    />
+                    <>
+                      <img
+                        src={subData?.template}
+                        alt="template"
+                        className="TemplateContainer"
+                        key={index}
+                        onClick={() => {
+                          handleClick(subData);
+                        }}
+                      />
+                    </>
                   );
                 })}
               </div>

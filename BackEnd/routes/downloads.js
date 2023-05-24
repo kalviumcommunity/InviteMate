@@ -1,10 +1,18 @@
 const express = require("express");
 const Download = require("../models/downloadModel");
+const headingData = require("../models/completeData");
 const fs = require("fs");
+const { error } = require("console");
 const router = express.Router();
 
 router.get("/", (req, res) => {
   res.json({ msg: "Get all downloads" });
+});
+
+router.get("/all", async (req, res) => {
+  const abc = await headingData.find();
+  res.send(abc);
+  console.log(abc);
 });
 
 //get single download
@@ -20,17 +28,27 @@ router.post("/", async (req, res) => {
     const download = await Download.create({ username, templateID, template });
     if (download) {
       res.status(200).json(download);
-      fs.appendFileSync("Template.txt", "Template successfully created");
-      console.log('The "data to append" was appended to file!');
-
-    }
-    else{
-        req.status(500).json({ error: "Shubham is wrong"})
+    } else {
+      req.status(500).json({ error: "No download" });
     }
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-  // res.json({msg:"Post a new single download"})
+});
+
+router.post("/all", async (req, res) => {
+  const { id, title, subHeading } = req.body;
+
+  try {
+    const all = await headingData.create({ id, title, subHeading });
+    if (all) {
+      res.status(200).json(all);
+    } else {
+      req.status(500).json({ error: "No download" });
+    }
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
 });
 
 //DELETE a download

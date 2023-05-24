@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
-// import headingData from "../CategoriesData";
 import "../Combined.css";
-import Navbar from "../Navbar";
+import Navbar from "../Navigation/Navbar";
 import Btemp1 from "../categories/Btemp1/Btemp1";
 import Wtemp1 from "../categories/wedding/Wtemp1/Wtemp1";
 import WedAnniv1 from "../categories/WedAnniv1/WedAnniv";
@@ -12,10 +11,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { motion } from "framer-motion";
 import Back from "../Back";
 import Loader from "../Loader";
-// import domtoimage from 'dom-to-image';
-// import btemp1 from "./Templates/btemp1SS.png";
-// import wtemp1 from "./Templates/Wed1SS.png";
-// import wedAnniv1 from "./Templates/wedAnnivSS.png";
 
 function EditingPage() {
   const templates = [
@@ -185,40 +180,18 @@ function EditingPage() {
   //       .catch((error) => console.log("Error creating image: ", error));
   //   }, 10);
 
-  //   if (isAuthenticated) {
-  //     fetch("http://localhost:4000/editing", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         username: user.name,
-  //         templateID: idNum,
-  //         template: finalTemp?.type.name,
-  //       }),
-  //       headers: {
-  //         "Content-type": "application/json; charset=UTF-8",
-  //       },
-  //     })
-  //       .then((data) => data.json())
-  //       .then((res) => {
-  //         console.log(res);
-  //       })
-  //       .catch((err) => console.log(err));
-  //   }
-  // };
-
   const handleDownload = () => {
     html2canvas(templateRef.current, {
       logging: true,
       scrollY: -window.scrollY,
     }).then((canvas) => {
-      canvas
-        .toBlob((blob) => {
-          saveAs(blob, `${finalTemp.type.name}.png`);
-        })
-        .catch((error) => console.log(error));
+      canvas.toBlob((blob) => {
+        saveAs(blob, `${finalTemp.type.name}.png`);
+      });
     });
 
     if (isAuthenticated) {
-      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER, {
+      fetch(process.env.REACT_APP_POST_TO_BACKEND_SERVER + "/editing", {
         method: "POST",
         body: JSON.stringify({
           username: user.name,
@@ -242,7 +215,6 @@ function EditingPage() {
   }, 1200);
 
   return (
-    // <h1>d</h1>
     <>
       {load ? (
         <Loader />

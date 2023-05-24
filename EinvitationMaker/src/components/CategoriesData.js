@@ -1,31 +1,26 @@
-// import btemp1 from './categories/Btemp1/Btemp1'
 import btemp1 from "./Templates/btemp1SS.png";
 import wedAnniv1 from "./Templates/Wed1SS.png";
 import wtemp1 from "./Templates/wedAnnivSS.png";
 
-// import './categories/Btemp1/Btemp1.css'
-// import image from "./Templates/birthday6.jpg"
-
 const headingData = [
-  // landingCategories =
   {
     id: 1,
     title: "Personal",
     subHeading: [
       {
         id: 11,
-        title: "Baby Shower",
+        title: "Birthdays",
         link: "#",
         template: btemp1,
         eachTemplates: [
-          { temp: btemp1, id: 111  },
-          { temp: wedAnniv1, id: 112  },
+          { temp: btemp1, id: 111 },
+          { temp: wedAnniv1, id: 112 },
           { temp: wtemp1, id: 113 },
         ],
       },
       {
         id: 12,
-        title: "Graduation",
+        title: "Weddings",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -36,7 +31,7 @@ const headingData = [
       },
       {
         id: 13,
-        title: "Prom Night",
+        title: "Anniversary",
         link: "#",
         template: wtemp1,
         eachTemplates: [
@@ -47,7 +42,7 @@ const headingData = [
       },
       {
         id: 14,
-        title: "Housewarmings",
+        title: "Baby Showers",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -58,7 +53,7 @@ const headingData = [
       },
       {
         id: 15,
-        title: "Retirement",
+        title: "Housewarming",
         link: "#",
         template: wtemp1,
         eachTemplates: [
@@ -75,7 +70,7 @@ const headingData = [
     subHeading: [
       {
         id: 21,
-        title: "Business Conference",
+        title: "Networking",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -86,7 +81,7 @@ const headingData = [
       },
       {
         id: 22,
-        title: "Exhibition",
+        title: "Corporate",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -97,7 +92,7 @@ const headingData = [
       },
       {
         id: 23,
-        title: "Webinar",
+        title: "Career",
         link: "#",
         template: wtemp1,
         eachTemplates: [
@@ -108,7 +103,7 @@ const headingData = [
       },
       {
         id: 24,
-        title: "Seminar",
+        title: "Training",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -119,7 +114,7 @@ const headingData = [
       },
       {
         id: 25,
-        title: "Product Launch",
+        title: "Appreciation",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -132,11 +127,11 @@ const headingData = [
   },
   {
     id: 3,
-    title: "Birthdays",
+    title: "Social Gatherings",
     subHeading: [
       {
         id: 31,
-        title: "Kids",
+        title: "Reunions",
         link: "#",
         template: wtemp1,
         eachTemplates: [
@@ -147,7 +142,7 @@ const headingData = [
       },
       {
         id: 32,
-        title: "Teenagers",
+        title: "Parties",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -158,7 +153,7 @@ const headingData = [
       },
       {
         id: 33,
-        title: "Women",
+        title: "Graduation",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -169,7 +164,7 @@ const headingData = [
       },
       {
         id: 34,
-        title: "Men",
+        title: "Picnics & Outings",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -180,7 +175,7 @@ const headingData = [
       },
       {
         id: 35,
-        title: "Surprise Party",
+        title: "Funerals & Memorials",
         link: "#",
         template: wtemp1,
         eachTemplates: [
@@ -193,11 +188,11 @@ const headingData = [
   },
   {
     id: 4,
-    title: "Weddings",
+    title: "Cultural",
     subHeading: [
       {
         id: 41,
-        title: "Engagement",
+        title: "Music & Dance",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -208,7 +203,7 @@ const headingData = [
       },
       {
         id: 42,
-        title: "Bachelor party",
+        title: "Theater & Films",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -219,18 +214,18 @@ const headingData = [
       },
       {
         id: 43,
-        title: "Wedding Ceremony",
+        title: "Art & Craft",
         link: "#",
         template: wtemp1,
         eachTemplates: [
-          { temp: btemp1, id: 431  },
-          { temp: wedAnniv1, id: 432  },
-          { temp: wtemp1, id: 433  },
+          { temp: btemp1, id: 431 },
+          { temp: wedAnniv1, id: 432 },
+          { temp: wtemp1, id: 433 },
         ],
       },
       {
         id: 44,
-        title: "Anniversary",
+        title: "Sports Event",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -241,7 +236,7 @@ const headingData = [
       },
       {
         id: 45,
-        title: "Reception",
+        title: "Food Festival",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -280,7 +275,7 @@ const headingData = [
       },
       {
         id: 53,
-        title: "Navratri",
+        title: "Eid",
         link: "#",
         template: wedAnniv1,
         eachTemplates: [
@@ -291,7 +286,7 @@ const headingData = [
       },
       {
         id: 54,
-        title: "Cristmas",
+        title: "Navratri & Durga Puja",
         link: "#",
         template: wtemp1,
         eachTemplates: [
@@ -302,7 +297,7 @@ const headingData = [
       },
       {
         id: 55,
-        title: "Ganesh Chaturthi",
+        title: "Christmas",
         link: "#",
         template: btemp1,
         eachTemplates: [
@@ -316,4 +311,3 @@ const headingData = [
 ];
 
 export default headingData;
-

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Btemp1.css";
-import imageBtemp1 from "../../Templates/birthday6.jpg";
+import imageBtemp1 from "../../Templates/Btemp1bg.jpg";
 
 function BTemp1() {
   const [nameBtemp1, setNameBtemp1] = useState("Dev Pratap");

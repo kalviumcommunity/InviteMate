@@ -3,20 +3,16 @@ import { useAuth0 } from "@auth0/auth0-react";
 import "./Combined.css";
 
 function LoginButton() {
-  //   const { isAuth } = useAuth0;
   const [logOut, setLogOut] = useState(false);
-
 
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   const openModel = () => {
     logout({ logoutParams: { returnTo: window.location.origin } });
   };
-  
 
   return (
     <div>
-      {/* {isAuthenticated && <p>{user.name}</p>} */}
       {isAuthenticated ? (
         <div className="profile" onClick={() => setLogOut(true)}>
           <img id="profilePic" src={user.picture} alt="profile"></img>
@@ -34,7 +30,10 @@ function LoginButton() {
             <button onClick={() => openModel()} className="yesbuttonOptions">
               Yes
             </button>
-            <button onClick={() => setLogOut(false)} className="nobuttonOptions">
+            <button
+              onClick={() => setLogOut(false)}
+              className="nobuttonOptions"
+            >
               No
             </button>
           </div>

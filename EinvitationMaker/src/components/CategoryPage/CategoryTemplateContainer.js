@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
-// import headingData from './CategoriesData'
+import React, {  useEffect, useState } from "react";
 import "../Combined.css";
-// import btemp1 from "../Templates/btemp1SS.png";
-// import wtemp1 from "../Templates/Wed1SS.png";
+
 import { useNavigate } from "react-router-dom";
 import Loader from "../Loader";
 
@@ -13,26 +11,22 @@ function CategoryTemplateContainer({ selectedButton, single, loader }) {
 
   const reEditPage = (data) => {
     navigate("/editing", { state: { id: data.id } });
-    console.log("id" + data.id);
   };
 
   useEffect(() => {
-    // console.log(currentTemp)
-  }, [currentTemp]);
-
-  useEffect(() => {
-    if (selectedButton !== null) {
+    if (selectedButton !== null ) {
       setCurrentTemp(
         single?.subHeading?.filter(
           (subTitle) => subTitle.title === selectedButton
         )
       );
-    } else {
+    } 
+ 
+    else {
       setCurrentTemp(single?.subHeading);
     }
   }, [selectedButton, single]);
 
-  // console.log(single)
 
   return (
     <>

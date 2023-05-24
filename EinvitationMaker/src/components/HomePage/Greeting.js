@@ -1,9 +1,24 @@
-import React from "react";
-import searchIcon from "../../components/Templates/search.svg";
-// import Searchbar from "./Searchbar";
-
+import React, { useContext } from "react";
+import Searchbar from "./Searchbar";
+import searchicon from "../Templates/searchicon.png";
+import { appContext } from "../AppContext";
 
 function Greeting() {
+  const { updateSearchedSubCategory } = useContext(appContext);
+
+  const callback = (searchbarValue) => {
+    const searchText = searchbarValue;
+    return (
+      <>
+        <img
+          src={searchicon}
+          alt="searchButton"
+          id="searchIcon"
+          onClick={() => updateSearchedSubCategory(searchText)}
+        ></img>
+      </>
+    );
+  };
 
   return (
     <div className="greetingsContainer">
@@ -12,14 +27,11 @@ function Greeting() {
         <br />
         The perfect way to spread the word!
       </h1>
-      <div className="searchContainer">
-        <input type={'text'} id='searchInput' placeholder='Search here..'></input>
-        {/* <Searchbar/> */}
-        <img src={searchIcon} alt="searchButton" id="searchIcon"></img>
-      </div>     
+      <div className="searchBarContainer">
+        <Searchbar searchtext={callback} />
+      </div>
     </div>
   );
 }
 
 export default Greeting;
-

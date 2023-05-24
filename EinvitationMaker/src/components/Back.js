@@ -1,17 +1,20 @@
-// import React from 'react'
-import back from './Templates/arrow-left.svg'
-import './Combined.css'
-import  {useNavigate}  from 'react-router-dom'
+import back from "./Templates/arrow-left.svg";
+import "./Combined.css";
+import { useNavigate } from "react-router-dom";
 
 function Back() {
-
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div>
-      <img src={back} alt='back' id='backImg' onClick={()=>navigate('../')}></img>
+      <img
+        src={back}
+        alt="back"
+        id="backImg"
+        onClick={() => navigate(-1)}
+      ></img>
     </div>
-  )
+  );
 }
 
-export default Back
+export default Back;

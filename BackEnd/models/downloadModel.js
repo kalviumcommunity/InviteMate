@@ -15,7 +15,7 @@ const downloadSchema = new Schema(
     template: {
       type: String,
       required: true,
-      index:true
+      index: true,
     },
     Btemp1: {
       nameBtemp1: {
@@ -23,15 +23,17 @@ const downloadSchema = new Schema(
         required: false,
       },
       dateBtemp1: {
-        type: Number,String,
+        type: Number,
+        String,
         required: false,
       },
       locationBtemp1: {
-        type: String,Number,
+        type: String,
+        Number,
         required: false,
       },
       type: Object,
-      required:false
+      required: false,
     },
     WedAnniv1: {
       headInviteWedAnniv1: {
@@ -52,7 +54,7 @@ const downloadSchema = new Schema(
         required: false,
       },
       type: Object,
-      required:false
+      required: false,
     },
     Wtemp1: {
       headInviteWtemp1: {
@@ -64,15 +66,13 @@ const downloadSchema = new Schema(
         required: false,
       },
       footInviteWtemp1: {
-        type: String, Number,
+        type: String,
+        Number,
         required: false,
       },
       type: Object,
-      required:false
-    }
-    // templateImg: {
-
-    // }
+      required: false,
+    },
   },
   { timestamps: true }
 );

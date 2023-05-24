@@ -1,5 +1,5 @@
 import React from "react";
-import './Combined.css'
+import "./Combined.css";
 import { PropagateLoader } from "react-spinners";
 
 function Loader() {

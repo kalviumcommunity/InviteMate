@@ -13,10 +13,9 @@ function SearchedSubCategory() {
   const [show, setShow] = useState(false);
   const [currentTemp, setCurrentTemp] = useState(null);
 
-    const reEditSearchPage = (data) => {
-      navigate("/editing", { state: { id: data.id } });
-    //   console.log("id" + data);
-    };
+  const reEditSearchPage = (data) => {
+    navigate("/editing", { state: { id: data.id } });
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,25 +24,17 @@ function SearchedSubCategory() {
   }, [updateSearchedSubCategory]);
 
   useEffect(() => {
-    // console.log(headingData)
     headingData.map((data) => {
       return data.subHeading.filter((subdata) => {
         if (subdata.title === searchedSubCategory) {
           return setCurrentTemp(subdata);
         } else {
-          // setCurrentTemp(null)
           setShow(false);
-        //   console.log("COming inside else statement");
         }
       });
     });
-    // console.log(currentTemp);
     if (currentTemp !== null) {
       setShow(true);
-      //   console.log(
-      //     "searchedSubCategory :" + searchedSubCategory,
-      //     "headingData :" + headingData
-      //   );
     }
   }, [
     currentTemp,
@@ -58,13 +49,11 @@ function SearchedSubCategory() {
         {show ? (
           <div className="categoryTemplatesContainer">
             <div className="insideCategoryTemplatesContainer">
-              {/* {console.log(currentTemp)} */}
               {loader ? (
                 <Loader />
               ) : (
                 <>
                   {currentTemp?.eachTemplates?.map((temp) => (
-                    
                     <img
                       src={temp.temp}
                       alt="tempImg"
@@ -78,7 +67,7 @@ function SearchedSubCategory() {
             </div>
           </div>
         ) : (
-          <>{/* <h1>Doesn't work</h1> */}</>
+          <></>
         )}
       </div>
     </>

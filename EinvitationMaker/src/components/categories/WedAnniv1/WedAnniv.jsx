@@ -48,34 +48,3 @@ function WedAnniv1() {
 
 export default WedAnniv1;
 
-// <!-- export default WedAnniv1; -->
-
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//   <meta charset="UTF-8">
-//   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//   <title>Document</title>
-//   <!-- <link rel="stylesheet" href="./WedAnniv1.css"> -->
-// </head>
-// <body>
-//   <div>
-//     <img src={../../Templates/WanniversaryTemp1.png} alt="WeddingTemp1" className='container'/>
-//     <div class="subContainer">
-//       <div className='Whead'>
-//       <textarea id='headInvite'>TOGEATHER WITH THEIR FAMILIES</textarea>
-//       </div>
-//       <div className='Wbody'>
-//       <textarea id='nameOneInvite'>Olivia Rodriques</textarea>
-//       <textarea id='nameTwoInvite'>Richard Jhonson</textarea>
-//       </div>
-//       <div className='Wfoot'>
-//       <textarea id='footInvite'>Invite you to celebrate their marrage</textarea>
-//       </div>
-//     </div>
-//   </div>
-// </body>
-// </html>
-
-

@@ -1,8 +1,5 @@
 import { createContext } from "react";
 
-const appContext = createContext({
-    // selectedCategory:''
-    // setSelectedCategory: () => {}
-});
+const appContext = createContext({});
 
 export { appContext };

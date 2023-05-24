@@ -6,7 +6,6 @@ const { error } = require("console");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  // const downloads =
   res.json({ msg: "Get all downloads" });
 });
 
@@ -29,14 +28,12 @@ router.post("/", async (req, res) => {
     const download = await Download.create({ username, templateID, template });
     if (download) {
       res.status(200).json(download);
-      //   // console.log('The "data to append" was appended to file!');
     } else {
       req.status(500).json({ error: "No download" });
     }
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-  // res.json({msg:"Post a new single download"})
 });
 
 router.post("/all", async (req, res) => {
@@ -46,14 +43,12 @@ router.post("/all", async (req, res) => {
     const all = await headingData.create({ id, title, subHeading });
     if (all) {
       res.status(200).json(all);
-      //   // console.log('The "data to append" was appended to file!');
     } else {
       req.status(500).json({ error: "No download" });
     }
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-  // res.json({msg:"Post a new single download"})
 });
 
 //DELETE a download

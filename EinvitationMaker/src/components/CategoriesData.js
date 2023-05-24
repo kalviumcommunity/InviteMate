@@ -1,32 +1,8 @@
-// import btemp1 from './categories/Btemp1/Btemp1'
 import btemp1 from "./Templates/btemp1SS.png";
 import wedAnniv1 from "./Templates/Wed1SS.png";
 import wtemp1 from "./Templates/wedAnnivSS.png";
-// import btemp1 from "./Templates/Btemp1"
-
-// const btemp1:"https://asset.cloudinary.com/do8qq0yjz/b2d86602c4cce8f701f2420b108e9981"
-
-// import './categories/Btemp1/Btemp1.css'
-// import image from "./Templates/birthday6.jpg"
-// fetch("https://asset.cloudinary.com/do8qq0yjz/b2d86602c4cce8f701f2420b108e9981")
-// .then((res)=>res.json)
-// .then((data)=>{ console.log(data)})
-// .catch((err)=>console.log(err))
-
-//   headers: {
-//     "Content-type": "application/json; charset=UTF-8",
-//   },
-// })
-//   .then((data) => data.json())
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => console.log(err));
-
-
 
 const headingData = [
-  // landingCategories =
   {
     id: 1,
     title: "Personal",
@@ -37,8 +13,8 @@ const headingData = [
         link: "#",
         template: btemp1,
         eachTemplates: [
-          { temp: btemp1, id: 111  },
-          { temp: wedAnniv1, id: 112  },
+          { temp: btemp1, id: 111 },
+          { temp: wedAnniv1, id: 112 },
           { temp: wtemp1, id: 113 },
         ],
       },
@@ -242,9 +218,9 @@ const headingData = [
         link: "#",
         template: wtemp1,
         eachTemplates: [
-          { temp: btemp1, id: 431  },
-          { temp: wedAnniv1, id: 432  },
-          { temp: wtemp1, id: 433  },
+          { temp: btemp1, id: 431 },
+          { temp: wedAnniv1, id: 432 },
+          { temp: wtemp1, id: 433 },
         ],
       },
       {
@@ -332,22 +308,6 @@ const headingData = [
       },
     ],
   },
-  // {"id":2,"title":"Professional","subHeading":[{"id":21,"title":"Networking","link":"#","template":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","eachTemplates":[{"temp":"/static/media/btemp1SS.29789f02c55d36a90537.png","id":211},{"temp":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","id":212},{"temp":"/static/media/wedAnnivSS.8697b316110ff2a0d637.png","id":213}]},{"id":22,"title":"Corporate","link":"#","template":"/static/media/btemp1SS.29789f02c55d36a90537.png","eachTemplates":[{"temp":"/static/media/btemp1SS.29789f02c55d36a90537.png","id":221},{"temp":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","id":222},{"temp":"/static/media/wedAnnivSS.8697b316110ff2a0d637.png","id":223}]},{"id":23,"title":"Career","link":"#","template":"/static/media/wedAnnivSS.8697b316110ff2a0d637.png","eachTemplates":[{"temp":"/static/media/btemp1SS.29789f02c55d36a90537.png","id":231},{"temp":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","id":232},{"temp":"/static/media/wedAnnivSS.8697b316110ff2a0d637.png","id":233}]},{"id":24,"title":"Training","link":"#","template":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","eachTemplates":[{"temp":"/static/media/btemp1SS.29789f02c55d36a90537.png","id":241},{"temp":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","id":242},{"temp":"/static/media/wedAnnivSS.8697b316110ff2a0d637.png","id":243}]},{"id":25,"title":"Appreciation","link":"#","template":"/static/media/btemp1SS.29789f02c55d36a90537.png","eachTemplates":[{"temp":"/static/media/btemp1SS.29789f02c55d36a90537.png","id":251},{"temp":"/static/media/Wed1SS.d92ca789d6a52c5066f8.png","id":252},{"temp":"/static/media/wedAnnivSS.8697b316110ff2a0d637.png","id":253}]}]}
-
 ];
 
-// console.log(JSON.stringify(headingData))
-
-// fetch( "https://localhost:4000", {
-//   method: "POST",
-//   body: JSON.stringify({
-//       headingData
-    
-//   }),
-//   headers: {
-//         "Content-type": "application/json; charset=UTF-8",
-//   },
-// })
-
 export default headingData;
-
